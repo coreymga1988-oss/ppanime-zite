@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Auto-restored theme variables */
+    --shadow-x: 0px;
+    --shadow-y: 1px;
+    --shadow-blur: 4px;
+    --shadow-spread: 0px;
+    --shadow-opacity: 0.2;
+    --shadow-color: #000000;
+    --shadow-2xs: var(--shadow-x) var(--shadow-y) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-xs: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-sm: var(--shadow-x) var(--shadow-y) calc(var(--shadow-blur) * 1.5) var(--shadow-spread) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-md: calc(var(--shadow-x) * 2) calc(var(--shadow-y) * 2) calc(var(--shadow-blur) * 3) calc(var(--shadow-spread) - 1px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-lg: calc(var(--shadow-x) * 4) calc(var(--shadow-y) * 4) calc(var(--shadow-blur) * 5) calc(var(--shadow-spread) - 3px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-xl: calc(var(--shadow-x) * 6) calc(var(--shadow-y) * 6) calc(var(--shadow-blur) * 7) calc(var(--shadow-spread) - 5px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 100%), transparent);
+    --shadow-2xl: calc(var(--shadow-x) * 8) calc(var(--shadow-y) * 8) calc(max(0px, var(--shadow-blur) * 9 - 8px)) calc(var(--shadow-spread) - 12px) color-mix(in srgb, var(--shadow-color) calc(var(--shadow-opacity) * 250%), transparent);
+    --shadow: var(--shadow-md);
+  }
+}
+
+@layer base {
+  :root,
+  .dark {
+    --background: 240 23% 3%;
+    --foreground: 48 23% 95%;
+    --muted: 240 15% 10%;
+    --muted-foreground: 246 13% 75%;
+    --popover: 240 17% 7%;
+    --popover-foreground: 48 23% 95%;
+    --border: 144 35% 16%;
+    --input: 144 30% 18%;
+    --card: 240 17% 7%;
+    --card-foreground: 48 23% 95%;
+    --primary: 144 72% 51%;
+    --primary-foreground: 240 23% 3%;
+    --secondary: 240 14% 11%;
+    --secondary-foreground: 48 23% 95%;
+    --accent: 104 100% 69%;
+    --accent-foreground: 240 23% 3%;
+    --destructive: 352 85% 58%;
+    --destructive-foreground: 48 23% 95%;
+    --ring: 144 72% 51%;
+    --radius: 0.6rem;
+    --sidebar-background: 240 20% 5%;
+    --sidebar-foreground: 246 13% 80%;
+    --sidebar-primary: 144 72% 51%;
+    --sidebar-primary-foreground: 240 23% 3%;
+    --sidebar-accent: 240 14% 11%;
+    --sidebar-accent-foreground: 48 23% 95%;
+    --sidebar-border: 144 35% 14%;
+    --sidebar-ring: 144 72% 51%;
+    --chart-1: 144 72% 51%;
+    --chart-2: 104 100% 69%;
+    --chart-3: 190 80% 55%;
+    --chart-4: 45 95% 60%;
+    --chart-5: 320 80% 62%;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'Orbitron', monospace;
+    --shadow-glow: 0 0 24px hsl(144 72% 51% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 70% 0%, hsl(144 72% 51% / 0.07), transparent 70%),
+      radial-gradient(ellipse 50% 60% at 0% 100%, hsl(104 100% 69% / 0.04), transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.02em;
+  }
+  .font-tech {
+    font-family: 'Orbitron', sans-serif;
+  }
+  .eyebrow {
+    font-family: 'Orbitron', sans-serif;
+    @apply text-[0.65rem] uppercase tracking-[0.28em] text-primary flex items-center gap-3;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply block h-px w-8 bg-primary;
+  }
+  .neon-card {
+    @apply rounded-xl border border-border bg-card/80 backdrop-blur transition-all duration-300 hover:border-primary/50;
+  }
+  .neon-card:hover {
+    box-shadow: var(--shadow-glow);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(144 72% 51% / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(144 72% 51% / 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 60% 40%, black 0%, transparent 70%);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(144 72% 51%), hsl(104 100% 69%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Hide Zite branding badge */
+a.branding-pill,
+.branding-pill,
+[class*='branding-pill'],
+.branding-close,
+a[href*='zite.com'],
+body > div:has(> a[href*='zite.com']),
+body > div:has(> .branding-pill) {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}

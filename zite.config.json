@@ -1,0 +1,29 @@
+{
+  "id": "35rm4d1pfn",
+  "accessMode": "external",
+  "authentication": {
+    "signup": "open",
+    "authenticationMethods": {
+      "magicLink": true,
+      "googleSignIn": true,
+      "sso": false
+    }
+  },
+  "envVars": {
+    "ZITE_R2_ACCESS_KEY_ID": {
+      "description": "R2 API token Access Key ID (32 characters)"
+    },
+    "ZITE_R2_ACCOUNT_ID": {
+      "description": "Cloudflare account ID (R2 overview page, right side)"
+    },
+    "ZITE_R2_BUCKET": {
+      "description": "R2 bucket name (e.g. pressplay-episodes)"
+    },
+    "ZITE_R2_PUBLIC_URL": {
+      "description": "Public address of the bucket, e.g. https://videos.pressplayanime.com or https://pub-xxxx.r2.dev (no trailing slash)"
+    },
+    "ZITE_R2_SECRET_ACCESS_KEY": {
+      "description": "R2 API token Secret Access Key (64 characters)"
+    }
+  }
+}
