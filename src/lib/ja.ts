@@ -1,0 +1,88 @@
+/** English → Japanese for fixed site text. Matched against whole text nodes and placeholder/title/aria-label attributes. */
+export const JA: Record<string, string> = {
+  // Account
+  'Profile': 'プロフィール', 'Avatar': 'アバター', 'Username': 'ユーザー名', 'Display name': '表示名',
+  'First name': '名', 'Last name': '姓', 'Email (sign-in)': 'メールアドレス（ログイン用）', 'Phone': '電話番号',
+  'Company': '会社名', 'Bio': '自己紹介',
+  "Your email is your sign-in (magic link or Google), so there's no password to manage.": 'メールアドレスでログインします（マジックリンクまたはGoogle）。パスワードの管理は不要です。',
+  'Membership': 'メンバーシップ', 'Refresh status': 'ステータスを更新', 'Your referral link': 'あなたの紹介リンク',
+  'Delete account': 'アカウント削除', 'Permanently removes your profile, pledges and ads, and cancels any subscription.': 'プロフィール、支援、広告を完全に削除し、サブスクリプションを解約します。',
+  'Delete my account': 'アカウントを削除する', 'Delete your account?': 'アカウントを削除しますか？', "This can't be undone.": 'この操作は取り消せません。',
+  'Cancel': 'キャンセル', 'Delete': '削除', 'Your Account': 'あなたのアカウント', 'Account Settings': 'アカウント設定',
+  'Profile saved': 'プロフィールを保存しました', 'Membership refreshed': 'メンバーシップを更新しました', 'Copied': 'コピーしました', 'Account deleted': 'アカウントを削除しました',
+  'Save': '保存', 'Save changes': '変更を保存', 'Free': '無料', 'Premium': 'プレミアム', 'Manage billing': '請求を管理',
+  // Advertiser
+  'Video file': '動画ファイル', 'Notes for reviewer': '審査担当者へのメモ', 'Edit': '編集', 'Pause': '一時停止', 'Resume': '再開',
+  'Delete this ad?': 'この広告を削除しますか？', 'Upload video ads, set target views, and track delivery once approved.': '動画広告をアップロードし、目標再生数を設定して、承認後の配信状況を確認できます。',
+  'New ad': '新しい広告', 'No ads yet — create your first one.': 'まだ広告がありません。最初の広告を作成しましょう。',
+  'Advertiser Hub': '広告主ハブ', 'Your Campaigns': 'あなたのキャンペーン', 'Submitted for admin approval': '管理者の承認待ちとして送信しました', 'Updated': '更新しました',
+  'Title': 'タイトル', 'Advertiser': '広告主', 'Click URL': 'クリック先URL', 'Target views': '目標再生数', 'Budget': '予算', 'Status': 'ステータス',
+  'Delivered': '配信済み', 'Pending': '保留中', 'Approved': '承認済み', 'Rejected': '却下', 'Active': '有効', 'Paused': '一時停止中', 'Completed': '完了',
+  // Campaigns
+  'Back a': 'プロジェクトを', 'Project': '支援する',
+  'Help greenlight the next Press Play release. Pick a reward tier and fund the anime you want to see.': '次のPress Play作品の実現を後押ししてください。リワードを選んで、見たいアニメを支援しましょう。',
+  'No campaigns are live right now. Join the mailing list to hear when the next one launches!': '現在実施中のキャンペーンはありません。メーリングリストに登録して、次回の開始をお知らせします！',
+  'Funded': '達成', 'Campaign not found.': 'キャンペーンが見つかりません。', 'All campaigns': 'すべてのキャンペーン', 'Reward Tiers': 'リワード',
+  'Pledge without a reward': 'リワードなしで支援', 'Crowdfunding': 'クラウドファンディング', 'Amount (USD)': '金額（USD）',
+  'Thank you for backing this project! 🎉': 'このプロジェクトを支援していただきありがとうございます！🎉', 'Payment not completed.': 'お支払いが完了していません。',
+  'Pledge': '支援する', 'Back this project': 'このプロジェクトを支援', 'backers': '人の支援者', 'days left': '日残り', 'Ended': '終了', 'Sold out': '完売',
+  // Catalog
+  'Officially licensed anime from Press Play.': 'Press Playの公式ライセンスアニメ。', 'Series not found.': '作品が見つかりません。', 'Back to series': '作品一覧に戻る',
+  'All series': 'すべての作品', 'Episodes': 'エピソード', 'No episodes yet.': 'まだエピソードがありません。', 'Catalog': 'カタログ', 'Series': '作品一覧',
+  'Search series or genre': '作品名やジャンルで検索', 'Watch': '視聴する', 'Play': '再生',
+  // Join
+  'Partner Invite': 'パートナー招待', 'Advertiser, licensor and admin accounts are invite-only. Enter the code from your invitation email.': '広告主・ライセンサー・管理者アカウントは招待制です。招待メールに記載されたコードを入力してください。',
+  'INVITE CODE': '招待コード', 'Redeem invite': '招待を利用する', 'Have an invite code?': '招待コードをお持ちですか？',
+  // Licensor
+  'Read-only analytics for the titles you license to Press Play.': 'Press Playにライセンスしている作品の分析データ（閲覧専用）。',
+  'No titles are linked to your account yet. Press Play will connect your series once licensing is finalized.': 'まだアカウントに作品が紐付けられていません。ライセンス契約が確定次第、Press Playが作品を接続します。',
+  'Episode': 'エピソード', 'Views': '再生数', 'Your share': 'あなたの取り分', 'Need localization for another title?': '他の作品のローカライズもご希望ですか？',
+  'Press Play handles subtitling, dubbing and distribution for English-speaking audiences. Visit our company site to reach our partnerships team.': 'Press Playは英語圏向けの字幕制作・吹替・配給を行っています。提携チームへのお問い合わせは当社サイトからどうぞ。',
+  'Contact Press Play': 'Press Playに問い合わせる', 'Licensor Hub': 'ライセンサーハブ', 'Performance & Revenue': 'パフォーマンスと収益',
+  'Total views': '総再生数', 'Revenue share': '収益分配率', 'Your revenue': 'あなたの収益',
+  // News
+  'The latest from the Press Play team.': 'Press Playチームからの最新情報。', 'No news yet — stay tuned.': 'まだニュースはありません。お楽しみに。',
+  'Transmission': 'お知らせ', 'News Feed': 'ニュース', 'Read more': '続きを読む',
+  // Premium
+  'Go': 'アップグレード', 'Watch everything ad-free and directly support official anime releases.': 'すべての作品を広告なしで視聴し、公式アニメのリリースを直接応援しましょう。',
+  '/ month': '/ 月', "You're Premium — thank you!": 'プレミアム会員です。ありがとうございます！', 'Secure checkout by Stripe. Cancel anytime from your account.': 'Stripeによる安全な決済。アカウントからいつでも解約できます。',
+  'Coupon or referral code (optional)': 'クーポンまたは紹介コード（任意）', 'Welcome to Premium! 🎉': 'プレミアムへようこそ！🎉', 'Checkout not completed.': '決済が完了していません。',
+  'Subscribe with card': 'カードで登録', 'No ads before episodes': 'エピソード前の広告なし', 'Support official releases': '公式リリースを応援',
+  // Videos
+  'Every upload from our channel, updated automatically the moment we post something new.': 'チャンネルのすべての動画。新しい投稿があると自動で更新されます。',
+  'Press Play on YouTube': 'YouTubeのPress Play', 'All Videos': 'すべての動画', 'Watch on YouTube': 'YouTubeで見る', 'Open on YouTube': 'YouTubeで開く', 'Search videos': '動画を検索',
+  // Watch
+  'Learn more': '詳しく見る', 'Go ad-free': '広告なしにする', 'Premium episode': 'プレミアムエピソード',
+  'Upgrade to Premium for $8/month to watch this and every episode ad-free.': '月額8ドルのプレミアムにアップグレードすると、このエピソードとすべてのエピソードを広告なしで視聴できます。',
+  'Upgrade to Premium': 'プレミアムにアップグレード', 'Video coming soon.': '動画は近日公開予定です。', 'Free viewing is ad-supported.': '無料視聴には広告が表示されます。',
+  'Go Premium': 'プレミアムに登録', 'to skip ads.': 'すると広告をスキップできます。', 'Ad': '広告', 'Off': 'オフ',
+  // Gate
+  'Go home': 'ホームへ', 'Account suspended': 'アカウント停止中', 'This account has been suspended. Contact Press Play if you think this is a mistake.': 'このアカウントは停止されています。誤りだと思われる場合はPress Playにお問い合わせください。',
+  'Not available': 'ご利用いただけません', "This section isn't available for your account type right now.": 'このセクションは現在、あなたのアカウント種別ではご利用いただけません。',
+  'Restricted area': 'アクセス制限エリア', "Your account doesn't have access to this dashboard. Partner dashboards are invite-only.": 'あなたのアカウントはこのダッシュボードにアクセスできません。パートナー用ダッシュボードは招待制です。',
+  // Shared components
+  'Join the Mailing List': 'メーリングリストに登録', 'Release news, beta invites, and crowdfunding drops — straight to your inbox.': 'リリース情報、ベータ招待、クラウドファンディング開始のお知らせをメールでお届けします。',
+  'Enter a valid email address.': '有効なメールアドレスを入力してください。', 'Could not subscribe right now.': '現在登録できません。', 'Subscribe': '登録する', 'Join': '登録',
+  "You're on the list!": '登録が完了しました！', 'Find Us Everywhere': 'あらゆる場所で', 'Follow the Journey': 'フォローしてください',
+  'Uploaded': 'アップロードしました', 'Upload failed': 'アップロードに失敗しました', 'Upload': 'アップロード',
+  // Admin
+  'Admin Console': '管理コンソール', 'Moderator Console': 'モデレーターコンソール', 'Platform Control': 'プラットフォーム管理',
+  'Overview': '概要', 'Users': 'ユーザー', 'Invites': '招待', 'Series & Episodes': '作品とエピソード', 'Upload Episode': 'エピソードをアップロード',
+  'Ads': '広告', 'News': 'ニュース', 'Coupons': 'クーポン', 'Mailing List': 'メーリングリスト', 'Visibility & Settings': '表示設定とサイト設定',
+  'Users by role': 'ロール別ユーザー数', 'Top series by views': '再生数上位の作品', 'Section Visibility': 'セクションの表示設定',
+  'Choose which parts of the site each audience can see. Admins always see everything.': '各ユーザー層がサイトのどの部分を閲覧できるかを選択します。管理者は常にすべてを閲覧できます。',
+  'Site Settings': 'サイト設定', 'Home page beta notice': 'ホームページのベータ告知', 'Licensor revenue per view (USD)': 'ライセンサーの1再生あたり収益（USD）',
+  'Leave blank to use the default closed-beta message': '空欄の場合はデフォルトのクローズドベータメッセージを使用します', 'Visibility updated': '表示設定を更新しました', 'Settings saved': '設定を保存しました',
+  'Preview': 'プレビュー', 'Referral': '紹介', 'Approve': '承認', 'Reject': '却下', 'Campaigns': 'キャンペーン', 'Pledges': '支援', 'News Posts': 'ニュース記事',
+  'Copy invite link': '招待リンクをコピー', 'Email invite': '招待メールを送る', 'Invite link copied': '招待リンクをコピーしました',
+  'Upload episode to R2': 'R2にエピソードをアップロード', 'Upload an MP4 or an HLS folder straight to your R2 bucket.': 'MP4またはHLSフォルダをR2バケットに直接アップロードします。',
+  '1 · Choose what to upload': '1 · アップロードする内容を選択', 'Single video file (MP4)': '単一の動画ファイル（MP4）', 'Simplest. One audio track, no dub/sub switch.': '最も簡単。音声トラックは1つで、吹替/字幕の切り替えはありません。',
+  'HLS folder (.m3u8)': 'HLSフォルダ（.m3u8）', 'From ffmpeg. Supports dub/sub audio switching.': 'ffmpegで作成。吹替/字幕の音声切り替えに対応。',
+  '2 · Destination folder in the bucket': '2 · バケット内の保存先フォルダ', '3 · Attach to episode (optional)': '3 · エピソードに紐付け（任意）',
+  "Saves the uploaded video's link as that episode's video, so it plays on its watch page right away. Leave blank to just upload and copy the link yourself.": 'アップロードした動画のリンクをそのエピソードの動画として保存し、視聴ページですぐに再生できるようにします。空欄の場合はアップロードのみ行い、リンクはご自身でコピーしてください。',
+  "Don't attach, just upload": '紐付けせずにアップロードのみ', 'Uploaded and attached to the episode': 'アップロードしてエピソードに紐付けました', 'Upload complete': 'アップロード完了', 'Link copied': 'リンクをコピーしました',
+  '— None —': '— なし —', 'Add': '追加', 'Nothing here yet.': 'まだ何もありません。', 'Delete permanently?': '完全に削除しますか？', 'Select…': '選択…', 'Search': '検索',
+  'Saved': '保存しました', 'Deleted': '削除しました', 'Actions': '操作', 'Role': 'ロール', 'Tier': 'プラン', 'Email': 'メールアドレス', 'Joined': '登録日',
+  'Platform': 'プラットフォーム', 'Content': 'コンテンツ', 'Revenue': '収益',
+  'Close': '閉じる', 'Back': '戻る', 'Loading…': '読み込み中…', 'Menu': 'メニュー',
+};
